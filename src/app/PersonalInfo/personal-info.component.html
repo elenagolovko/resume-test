@@ -1,0 +1,45 @@
+<section class="personal-info">
+  <div class="l-container container">
+    <img class="personal__avatar" src="{{info.avatar}}" alt="Аватар">
+    <h2 class="personal__name">
+      <span class="personal__surname">{{info.personalInfo.surname}}</span>
+      {{info.personalInfo.name}}
+    </h2>
+    <ul class="personal__job job list">
+      <li class="job__position job-item">{{info.personalInfo.position}}</li>
+      <li class="job__work-place job-item">{{info.personalInfo.workPlace}}</li>
+      <li class="job__department job__item">{{info.personalInfo.department}}</li>
+      <li class="job__grade job__item">{{info.personalInfo.grade}} грейд</li>
+    </ul>
+  </div>
+  <div class="r-container container">
+    <span class="personal__id">{{info.id}}</span>
+    <ul class="personal__info list">
+      <li class="personal__info-item">Возраст: {{info.personalInfo.age}} года</li>
+      <li class="personal__info-item">Дата рождения: {{info.personalInfo.birthDate}}</li>
+      <li class="personal__info-item">Местоположение: {{info.personalInfo.location}}</li>
+    </ul>
+    <ul class="contacts-list list">
+      <li class="contacts-list__item">тел.: <a href="tel:{{info.personalInfo.phone}}"></a></li>
+      <li class="contacts-list__item">моб.: <a href="tel:{{info.personalInfo.mobile}}"></a></li>
+      <li class="contacts-list__item">mail (Sigma): <a href="mailto:{{info.personalInfo.mailSigma}}"></a></li>
+      <li class="contacts-list__item">mail (Alpha): <a href="mailto:{{info.personalInfo.mailAlpha}}"></a></li>
+    </ul>
+    <div class="personal__profile-info">
+      <span class="profile-info__item">Статус профиля</span>
+      <span class="profile-info__item item-relevance">Актуален ({{info.profileStatus.relevance}})</span>
+      <span class="profile-info__item item-fullness">Заполненность {{info.profileStatus.fullness}}%</span>
+    </div>
+    <ul class="personal__socials">
+      <li class="socials__facebook socials__item">
+        <a class="socials__link" href="#"></a>
+      </li>
+      <li class="socials__twitter socials__item">
+        <a class="socials__link" href="#"></a>
+      </li>
+      <li class="socials__vkontakte socials__item">
+        <a class="socials__link" href="#"></a>
+      </li>
+    </ul>
+  </div>
+</section>
