@@ -1,8 +1,11 @@
-<section class="personal-info">
-  <div class="l-container container">
+<section *ngIf="isDataAvailable" class="personal-info">
+  <div class="personal__avatar-container">
     <img class="personal__avatar" src="{{info.avatar}}" alt="Аватар">
+  </div>
+  <div class="l-container container">
     <h2 class="personal__name">
       <span class="personal__surname">{{info.personalInfo.surname}}</span>
+      <br>
       {{info.personalInfo.name}}
     </h2>
     <ul class="personal__job job list">
@@ -13,33 +16,41 @@
     </ul>
   </div>
   <div class="r-container container">
-    <span class="personal__id">{{info.id}}</span>
+    <p class="personal__id">{{info.id}}</p>
     <ul class="personal__info list">
       <li class="personal__info-item">Возраст: {{info.personalInfo.age}} года</li>
       <li class="personal__info-item">Дата рождения: {{info.personalInfo.birthDate}}</li>
       <li class="personal__info-item">Местоположение: {{info.personalInfo.location}}</li>
     </ul>
     <ul class="contacts-list list">
-      <li class="contacts-list__item">тел.: <a href="tel:{{info.personalInfo.phone}}"></a></li>
-      <li class="contacts-list__item">моб.: <a href="tel:{{info.personalInfo.mobile}}"></a></li>
-      <li class="contacts-list__item">mail (Sigma): <a href="mailto:{{info.personalInfo.mailSigma}}"></a></li>
-      <li class="contacts-list__item">mail (Alpha): <a href="mailto:{{info.personalInfo.mailAlpha}}"></a></li>
-    </ul>
-    <div class="personal__profile-info">
-      <span class="profile-info__item">Статус профиля</span>
-      <span class="profile-info__item item-relevance">Актуален ({{info.profileStatus.relevance}})</span>
-      <span class="profile-info__item item-fullness">Заполненность {{info.profileStatus.fullness}}%</span>
-    </div>
-    <ul class="personal__socials">
-      <li class="socials__facebook socials__item">
-        <a class="socials__link" href="#"></a>
+      <li class="contacts-list__item">тел.: 
+        <a class="contacts-link" href="tel: {{info.personalInfo.phone}}">{{info.personalInfo.phone}}</a>
       </li>
-      <li class="socials__twitter socials__item">
-        <a class="socials__link" href="#"></a>
+      <li class="contacts-list__item">моб.: 
+        <a class="contacts-link" href="tel: {{info.personalInfo.mobile}}">{{info.personalInfo.mobile}}</a>
       </li>
-      <li class="socials__vkontakte socials__item">
-        <a class="socials__link" href="#"></a>
+      <li class="contacts-list__item">mail (Sigma): 
+        <a class="contacts-link" href="mailto:{{info.personalInfo.mailSigma}}">{{info.personalInfo.mailSigma}}</a>
+      </li>
+      <li class="contacts-list__item">mail (Alpha): 
+        <a class="contacts-link" href="mailto: {{info.personalInfo.mailAlpha}}">{{info.personalInfo.mailAlpha}}</a>
       </li>
     </ul>
   </div>
+  <div class="personal__profile-info">
+    <span class="profile-info__item">Статус профиля:</span>
+    <span class="profile-info__item item-relevance">Актуален ({{info.profileStatus.relevance}})</span>
+    <span class="profile-info__item item-fullness">Заполненность {{info.profileStatus.fullness}}%</span>
+  </div>
+  <ul class="personal__socials list">
+    <li class="socials__facebook socials__item">
+      <a class="socials__link" href="#"></a>
+    </li>
+    <li class="socials__twitter socials__item">
+      <a class="socials__link" href="#"></a>
+    </li>
+    <li class="socials__vkontakte socials__item">
+      <a class="socials__link" href="#"></a>
+    </li>
+  </ul>
 </section>

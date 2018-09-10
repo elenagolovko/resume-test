@@ -5,14 +5,14 @@ import { InfoService } from '../data/info.service';
 
 
 @Component({
-  selector: 'personal-info',
-  templateUrl: "personal-info.component.html",
-  styleUrls: ['personal-info.component.css']
+  selector: 'progress-section',
+  templateUrl: "progress.component.html",
+  styleUrls: ['progress.component.css']
 })
 
-export class PersonalInfoComponent {
+export class ProgressComponent {
   private info: any = [];
-  private keys: any = ["id", "avatar", "personalInfo", "profileStatus"];
+  private keys: any = ["progress"];
   private isDataAvailable: boolean;
 
   constructor(private infoService: InfoService) {

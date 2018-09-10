@@ -1,0 +1,39 @@
+.progress {
+  color: rgba(74, 74, 74, 0.4);
+}
+
+.legend__score {
+  color: rgba(74, 74, 74, 0.9);
+}
+
+.diagram {
+  position: relative;
+  text-align: center;
+  width: 83px;
+  height: 83px;
+  font-size: 34px;
+  border: 6px solid #92bced;
+  border-top: 6px solid #ffffff;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+}
+
+.diagram::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: -3px;
+  left: -3px;
+  width: 87px;
+  height: 87px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(74, 74, 74, 0.4);
+}
+
+.diagram-inner {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}

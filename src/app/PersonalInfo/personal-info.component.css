@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.personal-info {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.personal__avatar-container {
+  width: 180px;
+  height: 180px;
+  margin-right: 20px;
+  border: 1px solid #419bf9;
+}
+
+.container {
+  color: rgba(74, 74, 74, 0.9);
+}
+
+.l-container {
+  margin-right: 70px;
+}
+
+.personal__name {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.personal__surname {
+  margin-bottom: -10px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.job__position {
+  max-width: 387px;
+}
+
+.personal__id {
+  margin-top: 0;
+  color: rgba(74, 74, 74, 0.4);
+}
+
+.personal__info {
+  margin-bottom: 12px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: #639fe6;
+}
+
+.personal__profile-info {
+  font-size: 13px;
+  color: rgba(74, 74, 74, 0.3);
+}
+
+.profile-info__item {
+  display: block;
+  width: 100%;
+}
+
+.personal__socials {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.socials__link {
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-right: 11px;
+  background-color: rgba(74, 74, 74, 0.2);
+  border-radius: 50%;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.socials__link:hover {
+  background-color: #4a90e2;
+}
