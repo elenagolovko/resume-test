@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoService } from '../data/info.service';
 
-// import { Book } from '../data/book';
-
 
 @Component({
   selector: 'personal-info',

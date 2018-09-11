@@ -1,5 +1,11 @@
 .progress {
+  max-width: 250px;
+  padding: 26px 22px 22px 22px;
+  margin-bottom: 22px;
+  margin-right: 24px;
+  /* max-height: 175px; */
   color: rgba(74, 74, 74, 0.4);
+  background-color: #ffffff;
 }
 
 .legend__score {
