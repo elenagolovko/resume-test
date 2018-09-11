@@ -1,0 +1,26 @@
+.advice {
+  min-width: 250px;
+  padding: 26px 20px 24px 23px;
+  margin-bottom: 22px;
+  margin-right: 24px;
+  color: rgba(74, 74, 74, 0.4);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.advice__title {
+  margin: 0 0 15px 0;
+}
+
+.advice__text {
+  margin: 0;
+}
+.advice__button {
+  border: none;
+  background-color: transparent;
+  color: #419bf9;
+}
+
+.advice__favorites {
+  text-align: right;
+}

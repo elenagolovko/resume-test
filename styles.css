@@ -4,3 +4,51 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #f4f6f7;
 }
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.l-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  padding: 24px 40px 0 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.app__search {
+  position: absolute;
+  right: 30px;
+  top: 8px;
+  max-width: 258px;
+  width: 100%;
+  padding: 5px 0 5px 22px;
+  border: none;
+  background-color: #e7e9ea;
+  background-image: url('./img/search-loop.png');
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  border-radius: 10px;
+}
+
+.app__search::placeholder {
+  color: rgba(74, 74, 74, 0.3);
+}

@@ -1,18 +1,14 @@
-import { Component } from '@angular/core';
-import { InfoService } from '../data/info.service';
-
-// import { Book } from '../data/book';
-
+import { Component } from "@angular/core";
+import { InfoService } from "../../data/info.service";
 
 @Component({
-  selector: 'progress-section',
-  templateUrl: "progress.component.html",
-  styleUrls: ['progress.component.css']
+  selector: "goals-section",
+  templateUrl: "goals-section.component.html",
+  styleUrls: ["goals-section.component.css"]
 })
-
-export class ProgressComponent {
+export class GoalsSectionComponent {
   private info: any = [];
-  private keys: any = ["progress"];
+  private keys: any = ["goals"];
   private isDataAvailable: boolean;
 
   constructor(private infoService: InfoService) {

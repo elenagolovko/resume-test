@@ -1,0 +1,9 @@
+<aside *ngIf="isDataAvailable" class="courses">
+  <h2 class="courses__title">Мои записи на курсы</h2>
+  <ul class="courses__list">
+    <li *ngFor="let course of info.enrollments" class="courses__item">
+      <h3 class="course__title">{{course.title}}</h3>
+      <p class="course__start">{{course.startDate}}</p>
+    </li>
+  </ul>
+</aside>

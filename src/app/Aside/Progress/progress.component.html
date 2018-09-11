@@ -1,0 +1,18 @@
+<aside *ngIf="isDataAvailable" class="progress">
+  <h2 class="progress__title">Прогресс</h2>
+  <div class="progress__statistics">
+    <div class="diagram"><span class="diagram-inner">75%</span></div>
+    <ul class="progress-diagram__legend list">
+      <li class="legend-item">Курсы
+        <span class="legend__score">{{info.progress.courses}} из 8</span>
+      </li>
+      <li class="legend-item">Видео
+        <span class="legend__score">{{info.progress.videos}} из 28</span>
+      </li>
+      <li class="legend-item">Книги
+        <span class="legend__score">{{info.progress.books}} из 14</span>
+      </li>
+    </ul>
+  </div>
+  <p class="days-left">До конца работы над целью осталось {{info.progress.daysLeft}} дня</p>
+</aside>

@@ -1,0 +1,8 @@
+<aside *ngIf="isDataAvailable" class="advice">
+  <h2 class="advice__title">Мои советы</h2>
+  <p class="advice__text">{{info.advice}}</p>
+  <div class="advice__favorites">
+    <button class="advice__button" type="button">Добавить в избранное</button>
+    <button class="advice__button" type="button">Перейти к избранному</button>
+  </div>
+</aside>

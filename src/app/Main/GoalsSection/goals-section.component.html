@@ -1,0 +1,52 @@
+<section *ngIf="isDataAvailable" class="goals">
+  <h2 class="goals__title">Цели развития</h2>
+  <div class="layout-grid">
+    <section *ngFor="let goal of info.goals" class="goal__section section">
+      <p class="goal__per">{{goal.goalPer}}</p>
+      <span class="goal-match">({{goal.match}}% соответствие)</span>
+      <h2 class="goal-section__title">{{goal.goalTitle}}</h2>
+      <p class="goal-description__title">Цель развития:</p>
+      <ul class="goal-description">
+        <li *ngFor="let item of goal.developmentGoal" class="goal-description__item">
+          <p class="goal-description__item-text">{{item.text}}</p>
+        </li>
+      </ul>
+      <div class="goal__scores">
+        <p class="goal__scores--competence">Уровень развития компетенции: {{goal.competence}}</p>
+		    <p class="goal__scores--deviation">Отклонение от целевого уровня: {{goal.deviation}}</p>
+      </div>
+      <button class="change-goal button">Изменить цель развития</button>
+    </section>
+    <section class="goal-choice__section section">
+      <h2 class="visually-hidden">Выбор цели</h2>
+      <p class="goal__per">Советник / HR Сервисы / T&D</p>
+      <span class="goal-match">(66% соответствие)</span>
+      <form class="choice__form" action="#" method="post">
+        <fieldset class="select__group">
+		      <div class="choice__select-wrapper">
+            <select class="choice__select" aria-placeholder="Выберете компетенцию">
+              <option class="choice__option" disabled>Выберете компетенцию</option>
+            </select>
+          </div>
+		      <div class="choice__select-wrapper">
+            <select class="choice__select" aria-placeholder="Выберете цель развития 1">
+              <option class="choice__option" disabled>Выберете цель развития 1</option>
+            </select>
+          </div>
+		      <div class="choice__select-wrapper">
+            <select class="choice__select" aria-placeholder="Выберете цель развития 2">
+              <option class="choice__option" disabled>Выберете цель развития 2</option>
+            </select>
+          </div>
+        </fieldset>
+        <button class="choice-form__button" type="button">Вернуться</button>
+		    <button class="choice-form__button" type="button">Сохранить</button>
+      </form>
+    </section>
+    <section class="goal__additional section">
+			<h2 class="visually-hidden">Выбор дополнительной цели</h2>
+			<button class="addtional-goal__btn" type="button"></button>
+      <p class="additional-text">Вы можете выбрать дополнительную цель развития по своему выбору</p>
+    </section>
+  </div>
+</section>

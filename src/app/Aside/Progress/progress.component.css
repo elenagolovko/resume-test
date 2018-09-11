@@ -1,11 +1,27 @@
 .progress {
-  max-width: 250px;
+  min-width: 250px;
   padding: 26px 22px 22px 22px;
   margin-bottom: 22px;
   margin-right: 24px;
-  /* max-height: 175px; */
   color: rgba(74, 74, 74, 0.4);
   background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.progress__title {
+  margin: 0;
+}
+
+.progress__statistics {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.progress-diagram__legend {
+  margin: 0 0 0 5px;
+  padding: 0;
+  list-style: none;
 }
 
 .legend__score {
@@ -42,4 +58,9 @@
   display: block;
   top: 50%;
   transform: rotate(45deg) translateY(-50%);
+}
+
+.days-left {
+  margin: 0;
+  font-size: 13px;
 }

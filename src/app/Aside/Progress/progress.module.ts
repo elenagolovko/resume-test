@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from '@angular/core';
 import { ProgressComponent } from './progress.component';
-import { InfoService } from '../data/info.service';
+import { InfoService } from '../../data/info.service';
 
 
 @NgModule({
